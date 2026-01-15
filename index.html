@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hoya｜皮拉提斯課程預約</title>
+  <meta name="description" content="Hoya 皮拉提斯課程預約｜一對一/小班｜每月開放時段，線上快速預約。" />
+
+  <!-- Fonts: Noto Sans TC + Serif for the big title (optional) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;600&family=DM+Serif+Display&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="bg-pattern" aria-hidden="true"></div>
+
+  <main class="page">
+    <!-- HERO CARD -->
+    <section class="card hero">
+      <div class="hero-inner">
+        <div class="brand">
+          <div class="brand-name">Hoya</div>
+          <h1 class="headline">皮拉提斯課程預約</h1>
+        </div>
+
+        <p class="subtext">
+          每月的 25 號會開放下個月的預約時段。<br />
+          有任何課程問題歡迎私訊官方帳號，謝謝～
+        </p>
+
+        <div class="cta-row">
+          <a class="btn" href="#start" aria-label="前往預約區">
+            立即預約 <span class="btn-icon" aria-hidden="true">↓</span>
+          </a>
+          <span class="hint">（點擊後會滑到預約表）</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- OPTIONAL: SIMPLE LINKS SECTION (like your 2nd screenshot list) -->
+    <section class="card simple-links">
+      <h2 class="section-title">課程資訊</h2>
+      <p class="section-desc">你可以放：課程類型、上課地點、收費方式、注意事項等。</p>
+
+      <div class="link-list">
+        <a class="link-item" href="#start">
+          一對一課程 / 小班課程
+          <span class="arrow" aria-hidden="true">→</span>
+        </a>
+        <a class="link-item" href="#start">
+          初學者也可以上
+          <span class="arrow" aria-hidden="true">→</span>
+        </a>
+        <a class="link-item" href="#start">
+          每月 25 號開放下月時段
+          <span class="arrow" aria-hidden="true">→</span>
+        </a>
+        <a class="link-item" href="#start">
+          想問問題？請先私訊我
+          <span class="arrow" aria-hidden="true">→</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- BOOKING SECTION -->
+    <section id="start" class="card booking">
+      <div class="booking-header">
+        <h2 class="section-title">課程預約表</h2>
+        <p class="section-desc">
+          選擇你方便的時段完成預約。預約後我會以訊息/Email 與你確認課程需求。
+        </p>
+      </div>
+
+      <!-- Google Appointment iframe -->
+      <div class="iframe-wrap">
+        <iframe
+          title="Google Appointment Scheduling"
+          class="appointment"
+          src="https://calendar.google.com/calendar/appointments/schedules/PASTE_YOUR_SCHEDULE_ID_HERE?gv=true"
+          loading="lazy"
+          frameborder="0"
+        ></iframe>
+      </div>
+
+      <div class="note">
+        <strong>改期/取消：</strong>請於課程前 24 小時告知（可依你的規則調整）。
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-inner card footer-card">
+        <div class="footer-title">Hoya’s Pilates</div>
+
+        <div class="social">
+          <!-- LINE -->
+          <a class="social-btn" href="https://line.me/R/ti/p/your_line_id" target="_blank" rel="noopener">
+            LINE
+          </a>
+          <!-- IG -->
+          <a class="social-btn" href="https://instagram.com/your_ig" target="_blank" rel="noopener">
+            IG
+          </a>
+          <!-- Email -->
+          <a class="social-btn" href="mailto:you@example.com">
+            Email
+          </a>
+        </div>
+
+        <div class="copyright">© <span id="y"></span> Hoya. All rights reserved.</div>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    // footer year
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
