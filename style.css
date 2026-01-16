@@ -248,6 +248,6 @@ body{
   }
 
   .appointment{
-    height: 1050px; /* mobile usually needs taller */
+    height: 1200px; /* mobile usually needs taller */
   }
 }
